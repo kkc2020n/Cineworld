@@ -1,20 +1,27 @@
 
-import TrendingMovies from './component/TrendingMovies';
-import TrendingTv from './component/TrendingTv';
-import TopRatedMovies from './component/TopRatedMovies';
+import Trending from "./component/Trending";
+import NotFound from "./component/NotFound";
+import TvDetail from "./component/TvDetail";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
-
-
-
+const router = createBrowserRouter([{
+  path :'/',
+  element:<Trending/>,
+  errorElement: <NotFound/>
+},
+{
+  path :'/trending',
+  element:<Trending/>
+},
+{
+  path :'/detail/:id',
+  element:<TvDetail/>,
+  errorElement: <Trending/>
+}])
+  
   return (
-    <>
-      <TrendingMovies />
-      <div className='divider'></div>
-      <TrendingTv/>
-      <div className='divider'></div>
-      <TopRatedMovies/>
-    </>
+   <RouterProvider router={router} />
   )
 }
 

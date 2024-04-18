@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getTopMovieList } from '../features/cart/trendingSlice';
+import { getTopMovieList } from '../features/media/trendingSlice';
 import MediaCard from './MediaCard';
 
 
@@ -24,7 +24,7 @@ const NowPlaying = (props) => {
         <div className="grid-container">
           <ul className="trending-list">{
            topMovieList.map((item, i) => {
-            return <MediaCard {...item} i={i} />          
+            return <MediaCard {...item} i={i} keyprefix="r" />          
           })
 
           }</ul>

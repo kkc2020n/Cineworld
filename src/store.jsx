@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import trendingReducer from './features/cart/trendingSlice';
+import trendingReducer from './features/media/trendingSlice';
+import detailReducer from './features/media/detailSlice';
 
  const store = configureStore({
   reducer: {
-    trending: trendingReducer
+    trending: trendingReducer,
+    detail:detailReducer
   },
 });
 

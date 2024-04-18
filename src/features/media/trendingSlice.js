@@ -10,6 +10,7 @@ const initialState = {
     isLoading: true,
   };
 
+
   const movieurl = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc';
   const tvurl = 'https://api.themoviedb.org/3/discover/tv?air_date.gte=&air_date.lte=2024-10-17&certification=&certification_country=GB&debug=&first_air_date.gte=&first_air_date.lte=&page=1&primary_release_date.gte=&primary_release_date.lte=&region=GB%7CIE%7CXX&release_date.gte=&release_date.lte=&show_me=0&sort_by=popularity.desc&vote_average.gte=0&vote_average.lte=10&vote_count.gte=0&watch_region=GB&with_genres=&with_keywords=&with_networks=&with_origin_country=&with_original_language=&with_watch_monetization_types=flatrate%7Cfree%7Crent%7Cbuy&with_watch_providers=&with_release_type=&with_runtime.gte=0&with_runtime.lte=400&language=en-GB';
   const toprated = 'https://api.themoviedb.org/3/discover/movie?air_date.gte=&air_date.lte=&certification=&certification_country=GB&debug=&first_air_date.gte=&first_air_date.lte=&page=1&primary_release_date.gte=&primary_release_date.lte=&region=&release_date.gte=&release_date.lte=2024-10-17&show_me=0&sort_by=vote_average.desc&vote_average.gte=0&vote_average.lte=10&vote_count.gte=300&watch_region=GB&with_genres=&with_keywords=&with_networks=&with_origin_country=&with_original_language=&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&with_watch_providers=&with_release_type=&with_runtime.gte=0&with_runtime.lte=400';
