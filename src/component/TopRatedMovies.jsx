@@ -24,7 +24,7 @@ const NowPlaying = (props) => {
         <div className="grid-container">
           <ul className="trending-list">{
            topMovieList.map((item, i) => {
-            return <MediaCard {...item} i={i} keyprefix="r" />          
+            return <MediaCard {...item} i={i} keyprefix="rated" />          
           })
 
           }</ul>

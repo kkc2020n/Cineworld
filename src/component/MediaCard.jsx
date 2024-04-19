@@ -9,7 +9,7 @@ export default function MediaCard(props) {
       <li  key={`${props.keyprefix}${props.i}`}>
       
         <div className="canvas-left">
-          <Link key={item.id} to={`/detail/${item.id}`}>
+          <Link key={item.id} to={`/${props.keyprefix}detail/${item.id}`}>
           <div className="canvas-artwork">
             <div
               className="artwork"

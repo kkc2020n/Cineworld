@@ -55,10 +55,11 @@ const Episodes = (props) => {
         </div>
         <div className="divider"></div>
         <div className="media_div">
-          <div className="shelf-grid__header">
+          <div className="credits_header">
             <h2>Cast & Crew</h2>
           </div>
           <Cast data={season?.credits?.cast ? season.credits.cast : []} />
+          {/* <Cast data={season?.credits?.crew ? season.credits.crew : []} /> */}
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import { getTVDetail } from '../features/media/detailSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import MediaHeader from './MediaHeader';
 import Episodes from './Episodes';
+import TvFooter from './TvFooter';
 
 
 const TvDetail = (props) => {
@@ -39,6 +40,7 @@ const TvDetail = (props) => {
                   </div>
     
                   <Episodes data={detail ? detail : {}} />
+                  <TvFooter data={detail ? detail : {}} />
                 </div>
               </div>
             </div>

@@ -23,7 +23,7 @@ const TrendingMovies = (props) => {
         <div className="grid-container">
           <ul className="trending-list">{
            trendingMovies.map((item, i) => {
-            return <MediaCard {...item} i={i} keyprefix="m"/>
+            return <MediaCard {...item} i={i} keyprefix="movie"/>
           })
           }</ul>
         </div>
