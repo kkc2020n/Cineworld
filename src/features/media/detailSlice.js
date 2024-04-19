@@ -36,7 +36,7 @@ export const getTVDetail = createAsyncThunk(
         // console.log(thunkAPI);
         // console.log(thunkAPI.getState());
         // thunkAPI.dispatch(openModal());
-        const url = `https://api.themoviedb.org/3/tv//${payload.id}/season/1?language=en-US&append_to_response=credits`;
+        const url = `https://api.themoviedb.org/3/tv/${payload.id}/season/1?language=en-US&append_to_response=credits`;
         const resp = await axios.get(url,{
             headers:{
                 'Authorization' :'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MzgxZjU5Njk0YzlkZGVjYTUwNWI0YzBlY2E3OTA2MSIsInN1YiI6IjYxZmJmN2YyZGZhYWU5MDAxZGJiOTMwYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.XElCQQeUP4VTBBaj1d5ORlKGnWSmka0ToADafd1-S6A'

@@ -11,8 +11,8 @@ const Episodes = (props) => {
       if (media.id) {
         dispatch(getSeasonDetail(media));
       }
-    }, []);
-    console.log(season.episodes,"season")
+    }, [media.id]);
+ 
 
      const epData =  season.episodes ?season.episodes : [];
      console.log(epData,"seasonep")
