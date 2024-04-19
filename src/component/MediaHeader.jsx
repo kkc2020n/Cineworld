@@ -3,7 +3,10 @@ import _ from "underscore";
 const MediaHeader = (props) => {
     const { media } = props.data;
     const isEmpty = _.isEmpty(media);
-  
+    const openLink = (link) => {
+      window.open(link, "_blank");
+      return false;
+    };
     if (!isEmpty) {
       const [network] = media?.networks ? media?.networks : [];
       const imgpath = `http://image.tmdb.org/t/p/original/${media.backdrop_path}`;
